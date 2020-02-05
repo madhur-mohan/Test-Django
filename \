@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  
+  web:
+    build: .
+    command: python manage.py runserver 52.203.23.102:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+        
